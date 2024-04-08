@@ -20,15 +20,15 @@ void mostrarMensagemUsuario(String mensagem){
    context.callMethod('alert', [mensagem, '']);
 }
 void main(){
-  mostrarMensagemUsuario("A média da sua escola é 7,0 , você fez duas provas valendo 10,0");
-  double nota1 = double.parse(lerTextoUsuario("Qual foi a sua nota na primeira prova?"));
-  double nota2 = double.parse(lerTextoUsuario("Qual foi a sua nota na segunda prova?"));
-  double media = (nota1+nota2)/2;
-  if (media >=7){
-    mostrarMensagemUsuario("Sua média foi $media, você foi aprovado!");
+  int idade = int.parse(lerTextoUsuario("Quantos anos você tem?"));
+  if (idade <=19){
+    mostrarMensagemUsuario("Você é jovem");
   }
-  else {
-    mostrarMensagemUsuario("Sua média foi $media, você não foi aprovado");
-  }
+  if (idade >19 && idade<60){
+    mostrarMensagemUsuario("Você está na meia idade");
+    }
+    if (idade >=60) {
+      mostrarMensagemUsuario("Você é idoso");
+    }
 }
 }
