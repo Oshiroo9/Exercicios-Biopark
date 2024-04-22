@@ -10,12 +10,16 @@ void mostrarMensagemUsuario(String mensagem) {
 }
 
 void main(List<String> args) {
+  int par = 0;
+  int impar = 0;
   for (int i = 1; i <= 8; i++) {
     int nums = int.parse(lerTextoUsuario("informe um número"));
     if (nums % 2 == 0) {
-      mostrarMensagemUsuario("\nesse número é par\n");
+      par = par + 1;
     } else {
-      mostrarMensagemUsuario("\nesse número é ímpar\n");
+      impar = impar + 1;
     }
   }
+  mostrarMensagemUsuario(
+      "O total de números pares foi de $par, e de ímpares $impar");
 }
