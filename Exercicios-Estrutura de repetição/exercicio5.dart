@@ -13,9 +13,8 @@ void main(List<String> args) {
   int a = 0;
   int b = 0;
   int c = 0;
-  int pergunta = 0;
   for (int i = 1; i <= 50; i++) {
-    pergunta = int.parse(lerTextoUsuario("qual elevador você mais usa?\n1-A\n2-B\n3-C\n"));
+    int pergunta = int.parse(lerTextoUsuario("qual elevador você mais usa?\n1-A\n2-B\n3-C\n"));
     if (pergunta == 1) {
        a = a + 1;
     }
