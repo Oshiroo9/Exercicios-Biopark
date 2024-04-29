@@ -21,7 +21,7 @@ void main(List<String> args) {
         lerTextoUsuario("Insira um palpite\n Você tem $i tentativas: "));
     if (pergunta < 97) {
       mostrarMensagemUsuario("este número é MENOR que o correto");
-    } else {
+    } else if (pergunta > 97) {
       mostrarMensagemUsuario("este número é MAIOR que o correto");
     }
     if (pergunta == 97) {
