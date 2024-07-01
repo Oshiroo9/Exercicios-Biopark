@@ -10,8 +10,6 @@ void mostrarMensagemUsuario(String mensagem) {
 }
 
 abstract class Animal {
-  String nome = "";
-  String som = "";
   void emitirSom();
 }
 
@@ -31,7 +29,6 @@ class Raposa extends Animal {
 
 class Gato extends Animal {
   @override
-  String Som = "meow meow meow :3";
   void emitirSom() {
     print("meow meow meow :333");
   }
@@ -39,7 +36,6 @@ class Gato extends Animal {
 
 void main(List<String> args) {
   Lobo loboUiva = Lobo();
-  loboUiva.nome = "Lobo";
   loboUiva.emitirSom();
 
   Gato gatoMia = Gato();
